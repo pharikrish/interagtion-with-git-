@@ -14,6 +14,11 @@ agent any
                         echo 'build'
                     }
                 }
+                stage('test'){
+                    steps{
+                        echo 'unit testing'
+                    }
+                }
              
            }
     }
