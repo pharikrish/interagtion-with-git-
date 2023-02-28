@@ -1,7 +1,7 @@
 def GIT_CREDENTIALS= "dev-token"
 
     pipeline{
-    agent
+    agent any
          stage{
              stage('check-out-code'){
                  steps{
