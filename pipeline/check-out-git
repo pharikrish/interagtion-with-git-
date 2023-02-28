@@ -2,16 +2,15 @@ def GIT_CREDENTIALS= "dev-token"
 
     pipeline{
     agent any
-         stage{
+         stages{
              stage('check-out-code'){
                  steps{
                    script{
                     git credentialsId: GIT_CREDENTIALS,
                     url:"https://github.com/pharikrish/Dev-Ops-TEST.git"
 
-                }
-            }
-        }
+                   }
+                  }
+             }
+         }
     }
-    
-}
