@@ -1,4 +1,4 @@
-def GIT_CREDENTIALS= "dev-token"
+def GIT_CREDENTIALS = "dev-token"
 
 pipeline{
 agent any
@@ -7,7 +7,7 @@ agent any
                  steps{
                    script{
                     git credentialsId: GIT_CREDENTIALS,
-                    url:"https://github.com/pharikrish/Dev-Ops-TEST.git", branch= "main"
+                    url: "https://github.com/pharikrish/Dev-Ops-TEST.git", branch= "main"
 
                    }
                 }
