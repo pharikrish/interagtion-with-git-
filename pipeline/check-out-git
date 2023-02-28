@@ -5,7 +5,7 @@ pipeline{
         stage('checkout code'){
             step{
                 script{
-                    git credentialsId: GIT_CREDENTIALS,
+                    git credentialsId: GIT_CREDENTIALS
                     url:"https://github.com/pharikrish/Dev-Ops-TEST.git",
 
                 }
