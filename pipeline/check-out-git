@@ -4,10 +4,9 @@ pipeline{
 agent any
         stages {
              stage('check-out-code'){
-                 steps{
-                   script{
+                 steps{ 
                     git credentialsId: GIT_CREDENTIALS,
-                    url: "https://github.com/pharikrish/Dev-Ops-TEST.git", branch= "main"
+                    url:"https://github.com/pharikrish/Dev-Ops-TEST.git", branch= "main"
 
                    }
                 }
