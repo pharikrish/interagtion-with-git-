@@ -6,7 +6,7 @@ pipeline{
             step{
                 script{
                     git credentialsId: GIT_CREDENTIALS,
-                    url:"https://github.com/pharikrish/Dev-Ops-TEST.git"
+                    url:"https://github.com/pharikrish/Dev-Ops-TEST.git",
 
                 }
             }
