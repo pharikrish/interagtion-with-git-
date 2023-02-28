@@ -5,11 +5,14 @@ agent any
         stages {
              stage('check-out-code'){
                  steps{ 
-
                         git credentialsId: GIT_CREDENTIALS,
                         url:'https://github.com/pharikrish/Dev-Ops-TEST.git', branch:'main'
                     }
-            }
-
-        }
- }
+                }
+             stage(mvn build){
+                  steps{
+                     echo 'mvn clean'
+                   }
+                }
+           }
+    }
