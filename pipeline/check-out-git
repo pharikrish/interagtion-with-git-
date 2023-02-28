@@ -24,6 +24,11 @@ agent any
                         echo 'snyk test'
                     }
                 }
+                stage('Deploy'){
+                    steps{
+                        echo 'Deply stage'
+                    }
+                }
              
            }
     }
