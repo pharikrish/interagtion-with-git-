@@ -10,9 +10,14 @@ agent any
                         url:'https://github.com/pharikrish/Dev-Ops-TEST.git', branch:'main'
                     }
                 }
-                stage('unit test') { 
+                stage('mvn bulid') { 
             steps {
-                echo 'unit testing'
+                //echo 'unit testing'
+            }
+        }
+        stage('unit test') { 
+            steps {
+                // echo 'unit testing'
             }
         }
             }
