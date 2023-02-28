@@ -9,6 +9,11 @@ agent any
                         url:'https://github.com/pharikrish/Dev-Ops-TEST.git', branch:'main'
                     }
                 }
+                stage('build'){
+                    steps{
+                        echo 'build'
+                    }
+                }
              
            }
     }
