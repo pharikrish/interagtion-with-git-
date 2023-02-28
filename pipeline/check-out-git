@@ -5,10 +5,9 @@ agent any
         stages {
              stage('check-out-code'){
                  steps{ 
-                    git credentialsId: GIT_CREDENTIALS,
-                    url:"https://github.com/pharikrish/Dev-Ops-TEST.git", branch= "main"
-
-                   }
+                        git credentialsId: GIT_CREDENTIALS,
+                        url:'https://github.com/pharikrish/Dev-Ops-TEST.git'
+                    }
                 }
             }
      }
