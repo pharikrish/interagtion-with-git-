@@ -19,6 +19,11 @@ agent any
                         echo 'unit testing'
                     }
                 }
+                stage('sny'){
+                    steps{
+                        echo 'snyk test'
+                    }
+                }
              
            }
     }
