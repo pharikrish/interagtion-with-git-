@@ -19,7 +19,12 @@ agent any
                         echo 'unit testing'
                     }
                 }
-                stage('sny'){
+                stage('artifact'){
+                    steps{
+                        echo 'artifacts'
+                    }
+                }
+                stage('snyk'){
                     steps{
                         echo 'snyk test'
                     }
