@@ -2,6 +2,12 @@ def GIT_CREDENTIALS = "gitcredentials"
 
 pipeline{
 agent any
+      environment {
+		JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-2.el8_7.x86_64/bin/java"
+		M2_HOME="/opt/maven"
+		MAVEN_HOME="/opt/maven"
+        export PATH=$"{M2_HOME}/bin:${PATH}"
+      }
         stages {
              stage('check-out-code'){
                  steps{ 
