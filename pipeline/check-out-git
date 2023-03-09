@@ -14,26 +14,6 @@ agent any
                         sh "mvn -Dmaven.test.failure.ignore=true clean package"
                     }
                 }
-                stage('test'){
-                    steps{
-                        echo 'unit testing'
-                    }
-                }
-                stage('artifact'){
-                    steps{
-                        echo 'artifacts'
-                    }
-                }
-                stage('snyk'){
-                    steps{
-                        echo 'snyk test'
-                    }
-                }
-                stage('Deploy'){
-                    steps{
-                        echo 'Deply stage'
-                    }
-                }
-             
+
            }
     }
